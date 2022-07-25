@@ -1,0 +1,21 @@
+{% include "header.html" %}
+
+<div class="cover-container d-lg-flex mx-auto  justify-content-evenly  home" style="height: 750px;">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5 text-white">
+    <div class="col-lg-6 profile-pic">
+      <img src="{{url_for('static', filename='Phikza2.png')}}"
+        class="profile-pic rounded d-block mx-auto img-fluid .align-self-md-baseline align-self-sm-baseline flex-md-{grow|shrink}-1 flex-sm-{grow|shrink}-1"
+        alt="My Profile Pic" width="400" height="400" loading="lazy">
+    </div>
+    <div class="col-lg-6 main-text">
+      <h1 class="display-5 fw-bold lh-1 mb-3 intro fs-1">Hi, I'm Siphiwe</h1>
+      <p class="fs-4">I am passionate about people and really enjoy creating products and solutions that are
+        user-friendly.</p>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <a class="btn btn-lg px-4 me-md-2 btn-secondary about-button" href="{{ url_for('about_page') }}" role="button">About Me</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "footer.html" %}

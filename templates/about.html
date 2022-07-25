@@ -1,0 +1,18 @@
+{% include "header.html" %}
+<div class="container-fluid about text-white" style="height: 767px;">
+  <div class="py-5">
+    <!-- <h1 class="display-5 fw-bold ">About Me</h1> -->
+    <div class="col-lg-6 mx-auto">
+      <h1 class="display-5 fw-bold ">About Me</h1>
+      <p class="fs-4 mb-4">I have always had an interest in being a contributor. From a young age I was attracted by tasks and messages that called me to contribute.
+        In everything I do I want to think about how my work can contribute to making people's lives better. <br><br>This is the philosophy that drives my thinking and approach
+        to tech. If this resonates with you and you believe that our values are aligned. Make contact with me. I would be very happy to hear from you.
+      </p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a class="btn btn-secondary btn-lg px-4" href="{{ url_for('contact_page') }}" role="button">Make Contact</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "footer.html" %}
